@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Piano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h2>Virtual Piano</h2>
+        </header>
+        <!--
+        <input type="text" id="note-sequence" placeholder="Enter note sequence" />
+        <button id="play-button">Play</button>
+        -->
+        <!--61 keys piano-->
+        <ul class="piano-keys">
+            <!--2 black keys group-->
+            <li class="key white" data-key="1"><span id="w">1</span></li>
+            <li class="key black" data-key="!"><span id="b">!</span></li>
+            <li class="key white" data-key="2"><span id="w">2</span></li>
+            <li class="key black" data-key="@"><span id="b">@</span></li>
+            <li class="key white" data-key="3"><span id="w">3</span></li>
+
+            <!--3 black keys group-->
+            <li class="key white" data-key="4"><span id="w">4</span></li>
+            <li class="key black" data-key="$"><span id="b">$</span></li>
+            <li class="key white" data-key="5"><span id="w">5</span></li>
+            <li class="key black" data-key="%"><span id="b">%</span></li>
+            <li class="key white" data-key="6"><span id="w">6</span></li>
+            <li class="key black" data-key="^"><span id="b">^</span></li>
+            <li class="key white" data-key="7"><span id="w">7</span></li>
+
+            <!--2 black keys group-->
+            <li class="key white" data-key="8"><span id="w">8</span></li>
+            <li class="key black" data-key="&"><span id="b">&</span></li>
+            <li class="key white" data-key="9"><span id="w">9</span></li>
+            <li class="key black" data-key="("><span id="b">(</span></li>
+            <li class="key white" data-key="0"><span id="w">0</span></li>
+
+            <!--3 black keys group-->
+            <li class="key white" data-key="q"><span id="w">q</span></li>
+            <li class="key black" data-key="Q"><span id="b">Q</span></li>
+            <li class="key white" data-key="w"><span id="w">w</span></li>
+            <li class="key black" data-key="W"><span id="b">W</span></li>
+            <li class="key white" data-key="e"><span id="w">e</span></li>
+            <li class="key black" data-key="E"><span id="b">E</span></li>
+            <li class="key white" data-key="r"><span id="w">r</span></li>
+
+            <!--2 black keys group-->
+            <li class="key white" data-key="t"><span id="w">t</span></li>
+            <li class="key black" data-key="T"><span id="b">T</span></li>
+            <li class="key white" data-key="y"><span id="w">y</span></li>
+            <li class="key black" data-key="Y"><span id="b">Y</span></li>
+            <li class="key white" data-key="u"><span id="w">u</span></li>
+
+            <!--3 black keys group-->
+            <li class="key white" data-key="i"><span id="w">i</span></li>
+            <li class="key black" data-key="I"><span id="b">I</span></li>
+            <li class="key white" data-key="o"><span id="w">o</span></li>
+            <li class="key black" data-key="O"><span id="b">O</span></li>
+            <li class="key white" data-key="p"><span id="w">p</span></li>
+            <li class="key black" data-key="P"><span id="b">P</span></li>
+            <li class="key white" data-key="a"><span id="w">a</span></li>
+
+            <!--2 black keys group-->
+            <li class="key white" data-key="s"><span id="w">s</span></li>
+            <li class="key black" data-key="S"><span id="b">S</span></li>
+            <li class="key white" data-key="d"><span id="w">d</span></li>
+            <li class="key black" data-key="D"><span id="b">D</span></li>
+            <li class="key white" data-key="f"><span id="w">f</span></li>
+
+            <!--3 black keys group-->
+            <li class="key white" data-key="g"><span id="w">g</span></li>
+            <li class="key black" data-key="G"><span id="b">G</span></li>
+            <li class="key white" data-key="h"><span id="w">h</span></li>
+            <li class="key black" data-key="H"><span id="b">H</span></li>
+            <li class="key white" data-key="j"><span id="w">j</span></li>
+            <li class="key black" data-key="J"><span id="b">J</span></li>
+            <li class="key white" data-key="k"><span id="w">k</span></li>
+
+            <!--2 black keys group-->
+            <li class="key white" data-key="l"><span id="w">l</span></li>
+            <li class="key black" data-key="L"><span id="b">L</span></li>
+            <li class="key white" data-key="z"><span id="w">z</span></li>
+            <li class="key black" data-key="Z"><span id="b">Z</span></li>
+            <li class="key white" data-key="x"><span id="w">x</span></li>
+
+            <!--3 black keys group-->
+            <li class="key white" data-key="c"><span id="w">c</span></li>
+            <li class="key black" data-key="C"><span id="b">C</span></li>
+            <li class="key white" data-key="v"><span id="w">v</span></li>
+            <li class="key black" data-key="V"><span id="b">V</span></li>
+            <li class="key white" data-key="b"><span id="w">b</span></li>
+            <li class="key black" data-key="B"><span id="b">B</span></li>
+            <li class="key white" data-key="n"><span id="w">n</span></li>
+
+            <!-- left over C7 -->
+            <li class="key white" data-key="m"><span id="w">m</span></li>
+
+        </ul>
+    </div>
+    <script defer src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+    background-image: url('wood.jpg');
+    width: 1300px;
+    height: 345px;
+    border-radius: 20px;
+    padding: 35px 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper header {
+  color: #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.piano-keys .key {
+  color: white;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0 0 3px 3px;
+}
+
+.piano-keys {
+  display: flex;
+  overflow: hidden;
+}
+
+.piano-keys .white {
+  width: 48px;
+  height: 242px;
+  background: linear-gradient(#fff, #eee);
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #1B1212;
+  margin-right: -1px;
+  top: -1px;
+
+}
+
+.white:hover {
+  background: #D3D3D3;
+}
+
+.piano-keys .black {
+  width: 48px;
+  height: 133px;
+  background: linear-gradient(#333, #000);
+  border-radius: 0 0 8px 8px;
+  margin: 0 -18px 0 -18px;
+  z-index: 1;
+  border: 1px solid white;
+  top: -1px;
+  
+  
+}
+
+.black:hover {
+  background: #1B1212;
+}
+
+.key.white.active {
+    background: #D3D3D3;
+    box-shadow: inset -3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.key.black.active {
+    background: #1B1212;
+    box-shadow: inset -3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.piano-keys span {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#w {
+  color: black;
+}
+
+#b {
+  color: white;
+}
